@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job-Matching App</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="start.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 70px; 
+        }
+        .hero-section, .features-section, .how-it-works-section, .contact-section {
+            padding: 80px 0;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeInUp 2s forwards; 
+        }
+        .hero-section img {
+            max-width: 100%;
+            height: auto;
+        }
+        .download-buttons img {
+            width: 150px;
+            margin: 10px;
+        }
+        .space {
+            padding: 80px 0;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px); 
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0); 
+            }
+        }
+        .fade-up-on-scroll {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 1s, transform 1s;
+        }
+        .fade-up {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .transparent-blur {
+      background-color: rgba(255, 255, 255, 0.5); /
+      backdrop-filter: blur(10px); 
+      z-index: 2;
+    }
+    .big{
+        font-size: 75px;
+    }
+    .feature {
+            padding: 40px 40px;
+            text-align: center;
+            background-color: #F5F6F9;
+            opacity: 0; /* Initially hide the element */
+            transform: translateY(50px); /* Start with the element 50px below its final position */
+            animation: fadeInUp 1s forwards; /* Apply the fadeInUp animation */
+        }
+        .feature img {
+            max-width: 100%;
+            height: auto;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px); /* Start below the final position */
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0); /* End at the final position */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light transparent-blur fixed-top">
+    <div class="container-fluid d-flex justify-content-between">
+        <div class="text-dark font-weight-bold">Hicollege👋</div>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="#features">Features</a></li>
+                <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="#how-it-works">How It Works</a></li>
+                <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="contact.php">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="d-flex align-items-center">
+            <button class="navbar-toggler mx-2" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="btn btn-primary" href="#">Get Started</a>
+        </div>
+    </div>
+</nav>
+
+<div id="home" class="container hero-section">
+    <h1 class="font-weight-bolder big">HiCollege👋</h1>
+    <p>Let's connect better with HiCollege social networking platform</p>
+    <div class="download-buttons">
+        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+    </div>
+    <div class="row mt-4 space">
+        <div class="col-md-4">
+            <img src="image.png" alt="Feature 1">
+        </div>
+        <div class="col-md-4">
+            <img src="image.png" alt="Feature 2">
+        </div>
+        <div class="col-md-4">
+            <img src="image.png" alt="Feature 3">
+        </div>
+    </div>
+</div>
+
+
+<!-- features -->
+<div class="container mt-5 p-3"  id="features">
+        <div class="text-center">Feature</div>
+        <h1 class="text-center font-weight-bolder">A brand new way to hire, and be hired.</h1>
+        <div class="row row-cols-1 row-cols-md-2 g-4 mt-4">
+            <div class="col p-4">
+                <div class="feature">
+                    <h4 class="text-left py-2">Interactive Map</h4>
+                    <p class="text-left"> One can make connections in real-time, wherever 
+                    user goes he can connect with people around him or drop chats for everyone to react.</p>
+                    <img src="image2.png" alt="Video Feed Image">
+                </div>
+            </div>
+            <div class="col p-4">
+                <div class="feature">
+                    <h4 class="text-left py-2">Finding a projectmate</h4>
+                    <p class="text-left">College students can find other students for their projects or startups like musical collabs, film shoots, app development and what not.</p>
+                    <img src="image2.png" alt="Matchmaking Image">
+                </div>
+            </div>
+            <div class="col p-4">
+                <div class="feature">
+                    <h4 class="text-left py-2">Your Personalised Jobs and Events</h4>
+                    <p class="text-left">We allow students to connect with new age startups and get personalized jobs crafted for them. Squeeze out even more with hackathons, concerts, seminars, fest and places to hangout with your friends.</p>
+                    <img src="image2.png" alt="Bookmarks Image">
+                </div>
+            </div>
+            <div class="col p-4">
+                <div class="feature">
+                    <h4 class="text-left py-2">College Connections</h4>
+                    <p class="text-left">App allow college students to socialize and discover their compatibility with other students in their college in terms of personal projects, interests and like mindedness.</p>
+                    <img src="image2.png" alt="Messaging Image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- howitworks -->
+    <style>
+        /* Your existing CSS */
+        .toggle-button {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .toggle-button input[type="checkbox"] {
+            display: none;
+        }
+        .toggle-button label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        .toggle-button label .slider {
+            width: 50px;
+            height: 25px;
+            background-color: blue;
+            position: relative;
+            border-radius: 25px;
+            margin-right: 10px;
+        }
+        .toggle-button label .slider::before {
+            content: '';
+            position: absolute;
+            width: 23px;
+            height: 23px;
+            background-color: white;
+            border-radius: 50%;
+            top: 1px;
+            left: 1px;
+            transition: transform 0.2s ease;
+        }
+        .toggle-button input[type="checkbox"]:checked + label .slider::before {
+            transform: translateX(25px);
+        }
+        .company-content, .candidate-content {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+        .active {
+            display: block;
+            opacity: 1;
+        }
+
+        /* New CSS for fade-up effect */
+        .fade-up {
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+        .fade-up.active {
+            opacity: 1;
+        }
+    </style>
+
+    <div class="container text-center mt-5 p-3 mb-5 fade-up active" id="how-it-works">
+        <h2 class="mt-5">How it works</h2>
+        <div class="toggle-button">
+            <input type="checkbox" id="toggleSwitch">
+            <label for="toggleSwitch">
+                <span id="toggleLabel1" class="p-2">College</span>
+                <span class="slider"></span>
+                <span id="toggleLabel2" class="p-2">Company</span>
+            </label>
+        </div>
+        
+        <!-- Candidate Content -->
+        <div class="candidate-content active" id="candidateContent">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="how.png" alt="Candidate Step 1" class="img-fluid">
+                    <h4>Professional Profile</h4>
+                    <p>Create a free profile in under a minute with our silky-smooth onboarding flow. It can't be this easy, can it?</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="how.png" alt="Candidate Step 2" class="img-fluid">
+                    <h4>Connect formally</h4>
+                    <p>Find a job you love. Never get lost in a stack of resumes ever again. Your career, on your terms. Let's roll.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="how.png" alt="Candidate Step 3" class="img-fluid">
+                    <h4>Professional Events</h4>
+                    <p>Get matched with potential employers for great jobs with clear upfront terms. Having options never felt this good.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Company Content -->
+        <div class="company-content" id="companyContent">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="how.png" alt="Company Step 1" class="img-fluid">
+                    <h4>Party Profile</h4>
+                    <p>Create a company profile quickly to start connecting with candidates.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="how.png" alt="Company Step 2" class="img-fluid">
+                    <h4>Connect Informaly</h4>
+                    <p>Post job openings and browse potential candidates effortlessly.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="how.png" alt="Company Step 3" class="img-fluid">
+                    <h4> Fun and inter-college Events</h4>
+                    <p>Find the best talent for your company and make the hiring process seamless.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // JavaScript to handle fade-up effect on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeUpContainer = document.getElementById('fadeUpContainer');
+            fadeUpContainer.classList.add('active');
+        });
+
+        // JavaScript to handle toggle switch functionality
+        const toggleSwitch = document.getElementById('toggleSwitch');
+        const toggleLabel1 = document.getElementById('toggleLabel1');
+        const toggleLabel2 = document.getElementById('toggleLabel2');
+        const candidateContent = document.getElementById('candidateContent');
+        const companyContent = document.getElementById('companyContent');
+
+        toggleSwitch.addEventListener('change', () => {
+            if (toggleSwitch.checked) {
+                candidateContent.classList.remove('active');
+                companyContent.classList.add('active');
+            } else {
+                companyContent.classList.remove('active');
+                candidateContent.classList.add('active');
+            }
+        });
+    </script>
+
+
+
+    <!-- start -->
+<section class="get-started py-5">
+<div class="container text-center py-5">
+    <div class="row">
+        <div class="col-md-6 text-left align-content-center">
+        <h1 class="mb-4 text-dark font-weight-bold">Ready to get started?</h1>
+        <p class="mb-4 text-dark">Download Highlite today.</p>
+        
+        <div class="d-flex mb-4">
+                <a href="#" class="mr-2">
+                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" class="store-icon">
+                </a>
+                <a href="#">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" class="store-icon">
+                </a>
+            </div>
+        </div>
+        <div class="col-md-6">
+        <img src="image.png" class="img-fluid phone-img" alt="Phone 1">
+        </div>
+    </div>
+</div>
+</section>
+
+
+<!-- footer -->
+<footer class="footer-bg pt-5 pb-3">
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left">
+                <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+                    <h5 class="footer-heading">Highlite</h5>
+                    <p class="footer-size">The world's simplest job-matching app.</p>
+                </div>
+
+                <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+                    <h5 class="footer-heading">Explore</h5>
+                    <p><a href="#" class="text-dark footer-size">Home</a></p>
+                    <p><a href="#" class="text-dark footer-size">Features</a></p>
+                    <p><a href="#" class="text-dark footer-size">How It Works</a></p>
+                    <p><a href="#" class="text-dark footer-size">Contact</a></p>
+                </div>
+
+                <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+                    <h5 class="footer-heading">Social Links</h5>
+                    <div class="social-icons mb-3">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-whatsapp"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                    <h5 class="footer-heading">Contact Support</h5>
+                    <p><a href="mailto:support@highlite.app" class="text-dark footer-size">support@highlite.app</a></p>
+                    <p class="footer-size">7600 Broadway, San Antonio, TX 78209, USA</p>
+                </div>
+            </div>
+
+            <hr class="mb-3">
+
+            <div class="row align-items-center">
+                <div class="col-md-7 col-lg-8">
+                    <p class="text-left text-md-left footer-size">© 2023 Highlite. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    // Function to check if an element is in viewport
+    function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
+    // Add fade-up class when element is in viewport
+    function addFadeUpClass() {
+        const elements = document.querySelectorAll('.fade-up-on-scroll');
+        elements.forEach(element => {
+            if (isInViewport(element)) {
+                element.classList.add('fade-up');
+            }
+        });
+    }
+
+    // Run the function on page load and on scroll
+    window.addEventListener('load', addFadeUpClass);
+    window.addEventListener('scroll', addFadeUpClass);
+
+    document.querySelectorAll('a.nav-link').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+    
+</script>
+</body>
+</html>

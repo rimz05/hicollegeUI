@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        .contact-section {
+            padding: 40px;
+        }
+        .contact-info {
+            margin-bottom: 20px;
+        }
+        .contact-info h4 {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light transparent-blur fixed-top">
+    <div class="container-fluid d-flex justify-content-between">
+        <div class="text-dark font-weight-bold">Hicollege👋</div>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="index.php">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="feature.php">Features</a></li>
+                <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="howitwork1.php">How It Works</a></li>
+                <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="contact.php">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="d-flex align-items-center">
+            <button class="navbar-toggler mx-2" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="btn btn-primary" href="#">Get Started</a>
+        </div>
+    </div>
+</nav>
+    <div class="container contact-section p-5">
+        <div class="row">
+            <div class="col-md-6 contact-info align-content-center ">
+                <h1>We'd love to hear from you</h1>
+                <p>If you have any questions or need assistance with our finance app, please don't hesitate to contact us.</p>
+                <p><strong>Address:</strong> 7600 Broadway, San Antonio, TX, 78209</p>
+                <p><strong>Email:</strong> <a href="mailto:support@highlite.app">support@highlite.app</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+15122775461">+1-512-277-5461</a></p>
+            </div>
+            <div class="col-md-6">
+                <form action="contact_process.php" method="POST"> <!-- Updated form tag -->
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="johndoe@business.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Help">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" placeholder="I need help with ..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

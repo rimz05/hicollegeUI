@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.get-started {
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.get-started h1 {
+    font-weight: bold;
+    font-size: 64px;
+}
+p{
+    font-size: 24px;
+}
+.store-icon {
+    height: 40px;
+    width: auto;
+}
+
+.phone-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.phone-img:first-of-type {
+    transform: rotate(-10deg);
+}
