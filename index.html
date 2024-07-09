@@ -49,7 +49,7 @@
             transform: translateY(0);
         }
         .transparent-blur {
-      background-color: rgba(255, 255, 255, 0.5); /
+      background-color: rgba(255, 255, 255, 0.5); 
       backdrop-filter: blur(10px); 
       z-index: 2;
     }
@@ -82,28 +82,34 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light transparent-blur fixed-top">
-    <div class="container-fluid d-flex justify-content-between">
-        <div class="text-dark font-weight-bold">Hicollege👋</div>
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mx-auto">
-                <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="#features">Features</a></li>
-                <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="#how-it-works">How It Works</a></li>
-                <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-
-        <div class="d-flex align-items-center">
-            <button class="navbar-toggler mx-2" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light transparent-blur fixed-top">
+        <div class="container-fluid d-flex justify-content-between">
+            <div class="text-dark font-weight-bold">Hicollege👋</div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="btn btn-primary" href="#">Get Started</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark font-weight-bold" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark font-weight-bold" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark font-weight-bold" href="#how-it-works">How It Works</a>
+                    </li>
+                    <li class="nav-item align-content-center">
+                        <a class=" text-dark font-weight-bold" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <a class="btn btn-primary ml-lg-2" href="#">Get Started</a>
+                </div>
+            </div>
         </div>
-    </div>
-</nav>
-
+    </nav>
+    
 <div id="home" class="container hero-section">
     <h1 class="font-weight-bolder big">HiCollege👋</h1>
     <p>Let's connect better with HiCollege social networking platform</p>
@@ -111,14 +117,14 @@
         <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
         <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
     </div>
-    <div class="row mt-4 space">
-        <div class="col-md-4">
+    <div class="row mt-4 space ">
+        <div class="col-md-4 mb-4">
             <img src="image.png" alt="Feature 1">
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 mb-4">
             <img src="image.png" alt="Feature 2">
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 mb-4">
             <img src="image.png" alt="Feature 3">
         </div>
     </div>
@@ -327,7 +333,8 @@
 </div>
 </section>
 
-    <!-- footer -->
+
+<!-- footer -->
 <style>
     .footer-bg {
         background-color: #f8f9fa; /* Light gray background */
@@ -350,7 +357,6 @@
 </style>
 
 
-<!-- footer -->
 <footer class="footer-bg pt-5 pb-3">
 <div class="container text-center text-md-left">
     <div class="row text-center text-md-left">
